@@ -39,7 +39,7 @@ require("lspconfig").clangd.setup {
         "--all-scopes-completion",
         "--inlay-hints=true",
         "--completion-style=detailed",
-        "--j=12",
+        "--j=8",
         "--pch-storage=disk",
         "--compile-commands-dir=build",
         "--background-index",
@@ -47,8 +47,6 @@ require("lspconfig").clangd.setup {
     },
     filetypes = { "c", "cc", "cpp", "objc", "objcpp", "cuda" }
 }
-
--- require("lsp-inlayhints").setup()
 
 require("lspconfig").gopls.setup {
     capabilities = capabilities,
