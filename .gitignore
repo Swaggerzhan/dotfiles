@@ -1,0 +1,15 @@
+# Ignore everything
+*
+
+# white list
+!.gitignore
+!kitty/
+!kitty/**
+
+!nvim/
+!nvim/**
+
+!.tmux.conf
+!systemd/
+!systemd/user/
+!systemd/user/xremap-macos.service

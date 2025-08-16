@@ -1,0 +1,11 @@
+[Unit]
+Description=xremap-macos
+
+[Service]
+ExecStart=/home/zhanshaowei/.config/start_xremap_macos.sh
+Restart=on-failure
+# Environment can be set if needed
+# Environment="PATH=/usr/local/bin:/usr/bin:/bin"
+
+[Install]
+WantedBy=default.target
