@@ -8,38 +8,27 @@ ICON_WIFI_ERROR=􀙥
 ICON_WIFI_OFF=􀙈
 
 getname() {
-  WIFI_PORT=$(networksetup -listallhardwareports | awk '/Hardware Port: Wi-Fi/{getline; print $2}')
-  WIFI="$(system_profiler SPAirPortDataType | awk '/Current Network/ {getline;$1=$1; gsub(":",""); print;exit}')" #$(ipconfig getsummary $WIFI_PORT | awk -F': ' '/ SSID : / {print $2}')
-  HOTSPOT=$(ipconfig getsummary $WIFI_PORT | grep sname | awk '{print $3}')
-  IP_ADDRESS=$(scutil --nwi | grep address | sed 's/.*://' | tr -d ' ' | head -1)
+  # 获取en0接口的IP地址
+  EN0_IP=$(ifconfig en0 | awk '/inet / {print $2}')
   PUBLIC_IP=$(curl -m 2 https://ipinfo.io 2>/dev/null 1>&2; echo $?)
 
   ### Set icon according to wifi state
 
-  if [[ $HOTSPOT != "" ]]; then
-    ICON=$ICON_HOTSPOT
-    ICON_COLOR=$FOAM_MOON
-    LABEL=$HOTSPOT
-  elif [[ $WIFI != "" ]]; then
+  if [[ $EN0_IP != "" ]]; then
     ICON=$ICON_WIFI
     ICON_COLOR=$PINE_MOON
-    LABEL="$WIFI"
-  elif [[ $IP_ADDRESS != "" ]]; then
-    ICON=$ICON_WIFI
-    ICON_COLOR=$ROSE_MOON
-    LABEL="on"
+    LABEL="$EN0_IP"
   else
     ICON=$ICON_WIFI_OFF
     ICON_COLOR=$LOVE_MOON
     LABEL="off"
   fi
 
-  ### If no access to internet change icon + add a notice to the label
+  ### If no access to internet change icon color
 
   if [[ $PUBLIC_IP != "0" && $LABEL != "off" ]];then
     ICON=$ICON_WIFI_ERROR
     ICON_COLOR=$SUBTLE_MOON
-    LABEL="$WIFI (no internet)"
   fi
   
 
