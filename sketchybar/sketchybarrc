@@ -89,6 +89,8 @@ source "$RELPATH/sketchy-items/more-menu.sh"
 source "$RELPATH/sketchy-items/packages.sh"
 source "$RELPATH/sketchy-items/currentuser.sh"
 source "$RELPATH/sketchy-items/notifications.sh"
+source "$RELPATH/sketchy-items/wechat.sh"
+source "$RELPATH/sketchy-items/qq.sh"
 source "$RELPATH/sketchy-items/controls.sh"
 
 source "$RELPATH/sketchy-items/music.sh"

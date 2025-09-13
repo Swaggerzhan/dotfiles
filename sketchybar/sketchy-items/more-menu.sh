@@ -6,9 +6,9 @@ menucontrols=(
 )
 
 menuitems=(
-  "pkgs"
+  "qq"
   "user"
-  "notif"
+  "wechat"
 )
 
 SCRIPT_CLICK_SEPARATOR_MORE="export PATH=$PATH; \
