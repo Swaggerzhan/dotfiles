@@ -1,0 +1,27 @@
+# Ignore everything
+*
+
+# white list
+!.gitignore
+!kitty/
+!kitty/**
+
+!nvim/
+!nvim/**
+
+!/yabai
+!yabai/**
+
+!/skhd
+!skhd/**
+
+!/sketchybar
+!sketchybar/**
+
+!/bak
+!bak/**
+
+!.tmux.conf
+!systemd/
+!systemd/user/
+!systemd/user/xremap-macos.service
