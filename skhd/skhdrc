@@ -1,3 +1,25 @@
+
+
+ctrl + cmd - h : yabai -m window --focus west
+ctrl + cmd - j : yabai -m window --focus south
+ctrl + cmd - k : yabai -m window --focus north
+ctrl + cmd - l : yabai -m window --focus east
+alt + cmd - h : yabai -m window --swap west
+alt + cmd - j : yabai -m window --swap south
+alt + cmd - k : yabai -m window --swap north
+alt + cmd - l : yabai -m window --swap east
+
+ctrl + cmd - 1 : yabai -m window --space 1 ; sleep 0.1; yabai -m space --focus 1; sleep 0.1; yabai -m space --balance 
+ctrl + cmd - 2 : yabai -m window --space 2 ; sleep 0.1; yabai -m space --focus 2; sleep 0.1; yabai -m space --balance
+ctrl + cmd - 3 : yabai -m window --space 3 ; sleep 0.1; yabai -m space --focus 3; sleep 0.1; yabai -m space --balance 
+ctrl + cmd - 4 : yabai -m window --space 4 ; sleep 0.1; yabai -m space --focus 4; sleep 0.1; yabai -m space --balance 
+ctrl + cmd - 5 : yabai -m window --space 5 ; sleep 0.1; yabai -m space --focus 5; sleep 0.1; yabai -m space --balance 
+ctrl + cmd - 6 : yabai -m window --space 6 ; sleep 0.1; yabai -m space --focus 6; sleep 0.1; yabai -m space --balance 
+
+ctrl + cmd - b : yabai -m space --balance
+ctrl + cmd - s : yabai -m window --toggle split
+
+
 # ################################################################ #
 # THE FOLLOWING IS AN EXPLANATION OF THE GRAMMAR THAT SKHD PARSES. #
 # FOR SIMPLE EXAMPLE MAPPINGS LOOK FURTHER DOWN THIS FILE..        #

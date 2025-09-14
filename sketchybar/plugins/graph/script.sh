@@ -4,7 +4,8 @@ source $RELPATH/colors.sh
 
 ### Fetch system related data
 
-systempower="$(macmon pipe -s 1 -i 1 | jq -r .sys_power)"
+#systempower="$(macmon pipe -s 1 -i 1 | jq -r .sys_power)"
+systempower="10"
 probe="$(/bin/ps -Aceo pid,pcpu,comm -r | awk 'NR==2')"
 
 topprog_percent=$(echo "$probe" | awk '{print $2}')
@@ -50,6 +51,8 @@ sketchybar --push $NAME $graphpoint \
   --set $NAME.percent drawing=on \
   --set $NAME.label drawing=on
 
-graphlabel="${topprog_percent}% - $topprog [$topprog_pid] | $(printf '%.2f' $systempower)W"
+#graphlabel="${topprog_percent}% - $topprog [$topprog_pid] | $(printf '%.2f' $systempower)W"
+# consume to many power, remove the power calulate
+graphlabel="${topprog_percent}% - $topprog [$topprog_pid]"
 
 sketchybar --set $NAME.label label="$graphlabel" label.color="$LABEL_COLOR"

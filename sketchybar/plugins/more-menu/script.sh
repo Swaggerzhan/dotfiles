@@ -52,7 +52,7 @@ if [ "$STATE" = "off" ]; then
       --set $NAME icon=􀫰 \
       --trigger activities_update
 
-  elif [ $GRAPHSTATE = "on" ]; then
+  elif [ "$GRAPHSTATE" = "on" ]; then
     # CPU图表已经显示，直接显示more-menu，不关闭CPU
     menu_set "on"
     separator=(

@@ -106,5 +106,8 @@ sketchybar --add bracket base-controls battery wifi display \
 
 sketchybar --update
 
+# 默认触发more-menu展开
+NAME=separator-more $RELPATH/plugins/more-menu/script.sh "Control__Center,Bluetooth" "qq user wechat" $INNER_PADDINGS "$FONT"
+
 echo "sketchybar configuation loaded.."
 

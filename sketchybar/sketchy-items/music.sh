@@ -2,7 +2,7 @@
 
 ARTWORK_MARGIN=5
 TITLE_MARGIN=11
-INFO_WIDTH=80
+INFO_WIDTH=140
 
 command -v 'menubar' 2>/dev/null 1>&2 || alias menubar="$RELPATH/menubar"
 
