@@ -1,4 +1,12 @@
 # 💤 LazyVim
 
-A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
-Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
+
+# shortcuts
+
+`<leader>cf` => code format, configure in stylua.toml 
+`<leader>o` => toggle snacks.explorer
+
+### telescope
+
+<C-u> or <C-d> for preview window page up/down, but for git, is <C-f> or <C-b>
+
