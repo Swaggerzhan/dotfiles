@@ -29,6 +29,7 @@ return {
         },
     },
     keys = {
+        -- Your existing keys
         {
             "<leader>o",
             function()
@@ -37,5 +38,22 @@ return {
             desc = "Explorer",
         },
         { "<leader>e", false },
+        -- Disable the specific Git shortcuts you listed
+        { "<leader>gD", false },
+        { "<leader>gf", false },
+        { "<leader>gi", false },
+        { "<leader>gI", false },
+        { "<leader>gl", false },
+        { "<leader>gL", false },
+        { "<leader>gp", false },
+        { "<leader>gP", false },
+        { "<leader>gs", false },
+        { "<leader>gS", false },
+        { "<leader>gY", false },
+        { "<leader>gh", false },
+        { "<leader>gb", false },
+        { "<leader>gB", false },
+        { "<leader>gd", false },
     },
 }
+

@@ -1,16 +1,16 @@
 return {
-  {
-    "folke/noice.nvim",
-    opts = {
-      views = {
-        notify = {
-          timeout = false,
+    {
+        "folke/noice.nvim",
+        opts = {
+            views = {
+                notify = {
+                    timeout = true,
+                },
+                size = {
+                    max_width = "90%",
+                    max_height = "80%",
+                },
+            },
         },
-        size = {
-            max_width = "90%",
-            max_height = "80%",
-        },
-      },
     },
-  },
 }

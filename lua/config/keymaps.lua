@@ -4,7 +4,7 @@
 
 local keymap = vim.keymap
 
-keymap.set("n", "<leader>gg", "<cmd>EnableBlame<cr>", { desc = "Git Blame" })
-keymap.set("n", "<leader>ggc", "<cmd>DisableBlame<cr>", { desc = "Git Blame Off" })
+--keymap.set("n", "<leader>gg", "<cmd>EnableBlame<cr>", { desc = "Git Blame" })
+--keymap.set("n", "<leader>ggc", "<cmd>DisableBlame<cr>", { desc = "Git Blame Off" })
 keymap.set("n", "<leader>ds", "<cmd>Noice dismiss<cr>", { desc = "Dismiss Notifications" })
 
