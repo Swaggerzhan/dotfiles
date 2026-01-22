@@ -5,6 +5,9 @@ return {
     require('onedark').setup {
       style = 'darker',
       transparent = true,
+      highlights = {
+
+      },
     }
     require('onedark').load()
   end

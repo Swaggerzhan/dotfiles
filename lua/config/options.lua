@@ -24,3 +24,7 @@ opt.mouse = ""
 
 -- disable auto format
 vim.g.autoformat = false
+
+opt.ignorecase = true
+opt.smartcase = false
+
