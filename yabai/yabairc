@@ -53,7 +53,10 @@ yabai -m rule --add app="System Settings" manage=off
 yabai -m rule --add app="Activity Monitor" manage=off
 yabai -m rule --add app="NetEaseMusic" manage=off
 yabai -m rule --add app="Finder" manage=off
-yabai -m rule --add app="iTerm2" manage=off
+#yabai -m rule --add app="iTerm2" manage=off
+yabai -m rule --add app="EuDic" manage=off
+yabai -m rule --add app="GLKVM" manage=off
+yabai -m rule --add app="哔哩哔哩" manage=off
 yabai -m rule --add app="WeChat" title="Photos and Videos" manage=off
 yabai -m rule --add app="QQ" title="图片查看器" manage=off
 yabai -m rule --add app=".*" sub-layer=normal
