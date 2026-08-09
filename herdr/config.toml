@@ -17,6 +17,7 @@ navigate_workspace_down = "j"
 
 # Use prefix+n to focus the next agent instead of the next tab.
 next_agent = "prefix+n"
+previous_agent = "prefix+p"
 
 # Preserve tmux's default detach binding under the new prefix.
 detach = "prefix+d"
