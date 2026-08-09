@@ -1,0 +1,65 @@
+# Herdr configuration translated from ~/.tmux.conf.
+# Herdr normally loads configuration from ~/.config/herdr/config.toml.
+
+# The following tmux settings do not have direct Herdr equivalents:
+# - default-terminal and terminal-overrides are tmux terminal capability settings.
+# - focus-events, extended-keys, and extended-keys-format are handled by Herdr.
+# - escape-time is specific to tmux input handling.
+# - mode-keys is unnecessary because Herdr copy mode already uses vi-style keys.
+
+[keys]
+# Replace tmux's default Ctrl-b prefix with Ctrl-f.
+prefix = "ctrl+f"
+
+# Use vi-style movement for workspace navigation mode.
+navigate_workspace_up = "k"
+navigate_workspace_down = "j"
+
+# Use prefix+n to focus the next agent instead of the next tab.
+next_agent = "prefix+n"
+
+# Preserve tmux's default detach binding under the new prefix.
+detach = "prefix+d"
+
+# Replace tmux's default prefix+[ copy-mode binding with prefix+v.
+copy_mode = "prefix+v"
+
+# Preserve the configured vim-style pane navigation bindings.
+focus_pane_left = "prefix+h"
+focus_pane_down = "prefix+j"
+focus_pane_up = "prefix+k"
+focus_pane_right = "prefix+l"
+
+# Keep tmux's default prefix+z zoom binding.
+zoom = "prefix+z"
+
+# Use prefix+o to toggle the sidebar.
+toggle_sidebar = "prefix+o"
+
+# Move Herdr's notification-target action away from prefix+o.
+open_notification_target = "prefix+shift+o"
+
+# Match tmux's default prefix+% side-by-side split.
+# Herdr names the side-by-side action split_vertical.
+split_vertical = "prefix+percent"
+
+# Match tmux's default prefix+" top-and-bottom split.
+# Herdr names the stacked action split_horizontal.
+split_horizontal = "prefix+double_quote"
+
+[ui]
+# Match tmux's keyboard-first behavior when mouse mode is not enabled.
+mouse_capture = false
+
+# Hide the sidebar completely when it is collapsed.
+sidebar_collapsed_mode = "hidden"
+
+# Place Herdr's tab bar where tmux normally displays its status bar.
+tab_bar_position = "bottom"
+
+# Herdr has no direct equivalent to tmux status-right shell interpolation.
+# Keep CPU, memory, date, and time output in SketchyBar or the outer terminal.
+
+[theme]
+name = "one-dark"
+auto_switch = false

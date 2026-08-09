@@ -3,6 +3,9 @@
 
 # white list
 !.gitignore
+!herdr/
+!herdr/**
+
 !kitty/
 !kitty/**
 
